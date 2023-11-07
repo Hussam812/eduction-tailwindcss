@@ -5,3 +5,4 @@ export { default as Teacher } from "./Teacher";
 export { default as About } from "./About";
 export { default as Course } from "./course/Course";
 export { default as Navbar } from "../navbar/Navbar";
+export { default as Categories } from "./course/Categories";
