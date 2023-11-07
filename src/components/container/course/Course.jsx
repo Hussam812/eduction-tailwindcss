@@ -1,25 +1,26 @@
 import React from "react";
-import { categories, courses } from "../../../data";
-import Categories from "./Categories";
+import { AiOutlineUser, AiOutlineStar } from "react-icons/ai";
 
-const Course = () => {
+const Course = ({ image, category, Titile, rating, praticipants, price }) => {
   return (
-    <div className="section" id="courses">
-      <div className="text-center">
-        <div className="sm:text-3xl text-2xl font-bold mb-5">
-          Our Top <span className="text-Teal">Categories</span>
+    <div className="p-2 shadow-lg min-w-[15rem] bg-white rounded-md ">
+      <img src={image} alt="" />
+      <div className="mt-2 text-xs text-Teal">{category}</div>
+      <div className="text-sm  font-bold mt-2">{Titile}</div>
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <div className="bg-Solitude p-1 rounded-full">
+            <AiOutlineUser className="text-Teal" />
+          </div>
+          <div className="text-sm font-bold ">{praticipants}</div>
         </div>
-        <p className="text-sm text-gray leading-7 max-w-[700px] mx-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem at ex harum voluptate quae nesciunt enim excepturi sit,
-          sunt fuga omnis aliquam possimus tempore, incidunt commodi tenetur
-          eveniet dicta et. Lorem ipsum
-        </p>
-      </div>
-      <div className="grid md:grid-cols-4 sm:grid-cols-2 mt-12 gap-8 ">
-        {categories.map((category) => (
-          <Categories key={category.id} {...category} />
-        ))}
+        <div className="flex items-center gap-2">
+          <div className="bg-Solitude p-1 rounded-full">
+            <AiOutlineStar className="text-yellow" />
+          </div>
+          <div className="text-sm font-bold">{rating}</div>
+        </div>
+        <div className="text-sm font-bold"> ${price}</div>
       </div>
     </div>
   );

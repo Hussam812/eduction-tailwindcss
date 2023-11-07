@@ -10,7 +10,7 @@ const About = () => {
         </div>
         <div className="font-bolf sm:text-[1.875rem] text-[1.5rem] mb-5">
           We provide the <br /> best
-          <span className="text-Teal">online courses</span>
+          <span className="text-Teal"> online courses</span>
           <p className="text-sm text-gray leading-7  mb-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
             itaque eaque aliquid, illum non natus, nisi impedit voluptate

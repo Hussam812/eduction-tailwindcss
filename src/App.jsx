@@ -1,7 +1,7 @@
 import {
   About,
   Contact,
-  Course,
+  Courses,
   Footer,
   Home,
   Navbar,
@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Course />
+      <Courses />
       <Teacher />
       <Contact />
       <Footer />
