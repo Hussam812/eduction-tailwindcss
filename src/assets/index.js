@@ -1,5 +1,5 @@
 export { default as hero } from "./hero.png";
-export { default as About } from "./About.jpg";
+export { default as AboutImg } from "./About.jpg";
 export { default as courses1 } from "./courses1.jpg";
 export { default as courses2 } from "./courses2.jpg";
 export { default as courses3 } from "./courses3.jpg";
