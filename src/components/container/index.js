@@ -7,3 +7,4 @@ export { default as Courses } from "./course/Courses";
 export { default as Navbar } from "../navbar/Navbar";
 export { default as Categories } from "./course/Categories";
 export { default as Course } from "./course/Course";
+export { default as Accordins } from "./Accordins";
